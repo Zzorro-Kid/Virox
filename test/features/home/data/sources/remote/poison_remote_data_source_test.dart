@@ -3,10 +3,10 @@ import 'package:http/http.dart' as http;
 import 'package:mocktail/mocktail.dart';
 import 'package:virox/core/constants/api_constants.dart';
 import 'package:virox/core/shared_prefs.dart';
-import 'package:virox/features/home/data/models/poison_data_model.dart';
-import 'package:virox/features/home/data/models/poison_list_data_model.dart';
-import 'package:virox/features/home/data/sources/remote/poisons_remote_data_source.dart';
-import 'package:virox/features/home/domain/entities/risk_level_data.dart';
+import 'package:virox/features/search_screen/data/models/poison_data_model.dart';
+import 'package:virox/features/search_screen/data/models/poison_list_data_model.dart';
+import 'package:virox/features/search_screen/data/sources/remote/poisons_remote_data_source.dart';
+import 'package:virox/features/search_screen/domain/entities/risk_level_data.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
 

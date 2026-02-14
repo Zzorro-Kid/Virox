@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:virox/core/shared_prefs.dart';
-import 'package:virox/features/home/presentation/utils/search_history_manager.dart';
+import 'package:virox/features/search_screen/presentation/utils/search_history_manager.dart';
 
 class MockSharedPrefs extends Mock implements SharedPrefs {}
 

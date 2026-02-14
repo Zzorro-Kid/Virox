@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../home/domain/repositories/poison_repository.dart';
+import '../../../search_screen/domain/repositories/poison_repository.dart';
 import '../utils/list_shuffler.dart';
 import 'main_screen_state.dart';
 

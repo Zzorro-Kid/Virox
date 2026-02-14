@@ -4,14 +4,14 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:virox/core/error/failures.dart';
 import 'package:virox/core/shared_prefs.dart';
-import 'package:virox/features/home/data/models/poison_list_data_model.dart';
-import 'package:virox/features/home/domain/entities/alias_data.dart';
-import 'package:virox/features/home/domain/entities/poison_data.dart';
-import 'package:virox/features/home/domain/entities/risk_level_data.dart';
-import 'package:virox/features/home/domain/repositories/poison_repository.dart';
-import 'package:virox/features/home/presentation/cubit/search_poisons/search_poisons_cubit.dart';
-import 'package:virox/features/home/presentation/cubit/search_poisons/search_poisons_state.dart';
-import 'package:virox/features/home/presentation/utils/search_history_manager.dart';
+import 'package:virox/features/search_screen/data/models/poison_list_data_model.dart';
+import 'package:virox/features/search_screen/domain/entities/alias_data.dart';
+import 'package:virox/features/search_screen/domain/entities/poison_data.dart';
+import 'package:virox/features/search_screen/domain/entities/risk_level_data.dart';
+import 'package:virox/features/search_screen/domain/repositories/poison_repository.dart';
+import 'package:virox/features/search_screen/presentation/cubit/search_poisons/search_poisons_cubit.dart';
+import 'package:virox/features/search_screen/presentation/cubit/search_poisons/search_poisons_state.dart';
+import 'package:virox/features/search_screen/presentation/utils/search_history_manager.dart';
 
 class MockPoisonRepository extends Mock implements PoisonRepository {}
 

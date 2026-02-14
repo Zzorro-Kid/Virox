@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/constants/app_text_styles.dart';
-import '../../features/home/domain/entities/risk_level_data.dart';
+import '../../features/search_screen/domain/entities/risk_level_data.dart';
 
 class RiskBadge extends StatelessWidget {
   final RiskLevel riskLevel;

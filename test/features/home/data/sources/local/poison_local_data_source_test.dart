@@ -5,8 +5,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:virox/core/error/exceptions.dart';
 import 'package:virox/core/shared_prefs.dart';
-import 'package:virox/features/home/data/models/poison_list_data_model.dart';
-import 'package:virox/features/home/data/sources/local/poisons_local_data_source.dart';
+import 'package:virox/features/search_screen/data/models/poison_list_data_model.dart';
+import 'package:virox/features/search_screen/data/sources/local/poisons_local_data_source.dart';
 
 class MockSharedPrefs extends Mock implements SharedPrefs {}
 

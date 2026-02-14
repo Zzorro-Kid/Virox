@@ -1,10 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:virox/core/network/network_info.dart';
-import 'package:virox/features/home/data/models/poison_list_data_model.dart';
-import 'package:virox/features/home/data/repositories/poison_repository_impl.dart';
-import 'package:virox/features/home/data/sources/local/poisons_local_data_source.dart';
-import 'package:virox/features/home/data/sources/remote/poisons_remote_data_source.dart';
+import 'package:virox/features/search_screen/data/models/poison_list_data_model.dart';
+import 'package:virox/features/search_screen/data/repositories/poison_repository_impl.dart';
+import 'package:virox/features/search_screen/data/sources/local/poisons_local_data_source.dart';
+import 'package:virox/features/search_screen/data/sources/remote/poisons_remote_data_source.dart';
 
 class MockPoisonRemoteDataSource extends Mock
     implements PoisonRemoteDataSource {}

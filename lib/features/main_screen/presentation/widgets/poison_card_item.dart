@@ -7,7 +7,7 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/utils/screen_layout.dart';
 import '../../../../core/utils/ui_utils.dart';
 import '../../../../core/widgets/risk_badge.dart';
-import '../../../home/domain/entities/poison_data.dart';
+import '../../../search_screen/domain/entities/poison_data.dart';
 
 class PoisonCardItem extends StatelessWidget {
   final PoisonData poison;

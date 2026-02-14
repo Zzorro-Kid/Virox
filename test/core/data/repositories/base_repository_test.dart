@@ -5,8 +5,8 @@ import 'package:virox/core/data/repositories/base_repository.dart';
 import 'package:virox/core/error/exceptions.dart';
 import 'package:virox/core/error/failures.dart';
 import 'package:virox/core/network/network_info.dart';
-import 'package:virox/features/home/data/models/poison_list_data_model.dart';
-import 'package:virox/features/home/data/sources/remote/poisons_remote_data_source.dart';
+import 'package:virox/features/search_screen/data/models/poison_list_data_model.dart';
+import 'package:virox/features/search_screen/data/sources/remote/poisons_remote_data_source.dart';
 
 class MockNetworkInfo extends Mock implements NetworkInfo {}
 

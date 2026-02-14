@@ -1,4 +1,4 @@
-import '../../../home/domain/entities/poison_data.dart';
+import '../../../search_screen/domain/entities/poison_data.dart';
 
 class ListShuffler {
   List<PoisonData> getShuffledList(List<PoisonData> list) {

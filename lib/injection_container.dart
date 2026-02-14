@@ -4,14 +4,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/network/network_info.dart';
 import 'core/shared_prefs.dart';
-import 'features/home/data/repositories/poison_repository_impl.dart';
-import 'features/home/data/sources/local/poisons_local_data_source.dart';
-import 'features/home/data/sources/remote/poisons_remote_data_source.dart';
-import 'features/home/domain/repositories/poison_repository.dart';
-import 'features/home/presentation/cubit/search_poisons/search_poisons_cubit.dart';
-import 'features/home/presentation/utils/search_history_manager.dart';
 import 'features/main_screen/presentation/cubit/main_screen_cubit.dart';
 import 'features/main_screen/presentation/utils/list_shuffler.dart';
+import 'features/search_screen/data/repositories/poison_repository_impl.dart';
+import 'features/search_screen/data/sources/local/poisons_local_data_source.dart';
+import 'features/search_screen/data/sources/remote/poisons_remote_data_source.dart';
+import 'features/search_screen/domain/repositories/poison_repository.dart';
+import 'features/search_screen/presentation/cubit/search_poisons/search_poisons_cubit.dart';
+import 'features/search_screen/presentation/utils/search_history_manager.dart';
 
 final sl = GetIt.instance;
 

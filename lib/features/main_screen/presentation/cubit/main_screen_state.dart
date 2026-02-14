@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import '../../../home/domain/entities/poison_data.dart';
+import '../../../search_screen/domain/entities/poison_data.dart';
 
 sealed class MainScreenState extends Equatable {
   const MainScreenState();

@@ -30,7 +30,7 @@ const firstAidContent = [
     videoUrl: '',
     videoThumbnail: '',
     description:
-        'Exposure to poisonous fumes can happen at home or in the workplace. '
+        'Exposure to poisonous fumes can happen at search_screen or in the workplace. '
         'Mixing certain substances can cause an unplanned chemical reaction '
         'that releases toxic fumes into the air. Similarly, working with '
         'cleaning products for a long time can begin to irritate the lungs. '
