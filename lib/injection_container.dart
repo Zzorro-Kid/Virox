@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/network/network_info.dart';
 import 'core/shared_prefs.dart';
+import 'features/all_poisons_screen/presentation/cubit/all_poisons_cubit.dart';
 import 'features/main_screen/presentation/cubit/main_screen_cubit.dart';
 import 'features/main_screen/presentation/utils/list_shuffler.dart';
 import 'features/search_screen/data/repositories/poison_repository_impl.dart';
@@ -42,6 +43,9 @@ void _initBloc() {
     )
     ..registerFactory(
       () => MainScreenCubit(repository: sl(), listShuffler: sl()),
+    )
+    ..registerFactory(
+      () => AllPoisonsCubit(repository: sl(), listShuffler: sl()),
     );
 }
 

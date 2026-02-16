@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../core/constants/app_constants.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../../core/router/app_router.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/utils/screen_layout.dart';
 import '../cubit/main_screen_cubit.dart';
@@ -28,7 +30,7 @@ class PoisonsListSection extends StatelessWidget {
           const SizedBox(height: 12),
           _buildPoisonsCards(context),
           const SizedBox(height: 10),
-          _buildLoadMoreButton(),
+          _buildLoadMoreButton(context),
         ],
       ),
     );
@@ -73,9 +75,9 @@ class PoisonsListSection extends StatelessWidget {
     );
   }
 
-  Widget _buildLoadMoreButton() {
+  Widget _buildLoadMoreButton(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Navigator.pushNamed(context, AppRouter.allPoisonsScreenPage),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(

@@ -15,12 +15,11 @@ class MainScreenCubit extends Cubit<MainScreenState> {
 
     final result = await repository.getAllPoisons();
 
-    result.fold(
-      (failure) => emit(const MainScreenError('Failed to load data')),
-      (poisonListData) {
-        final poisons = listShuffler.getShuffledList(poisonListData.poisons);
-        emit(MainScreenLoaded(poisons: poisons));
-      },
-    );
+    result.fold((failure) => emit(MainScreenError(failure.message)), (
+      poisonListData,
+    ) {
+      final poisons = listShuffler.getShuffledList(poisonListData.poisons);
+      emit(MainScreenLoaded(poisons: poisons));
+    });
   }
 }

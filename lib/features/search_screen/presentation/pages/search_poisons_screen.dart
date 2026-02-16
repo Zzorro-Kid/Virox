@@ -14,14 +14,14 @@ import '../widgets/search_poisons_app_bar.dart';
 import '../widgets/search_poisons_history.dart';
 import '../widgets/search_poisons_result_list.dart';
 
-class SearchPage extends StatefulWidget {
-  const SearchPage({super.key});
+class SearchPoisonsScreen extends StatefulWidget {
+  const SearchPoisonsScreen({super.key});
 
   @override
-  State<SearchPage> createState() => _SearchPageState();
+  State<SearchPoisonsScreen> createState() => _SearchPoisonsScreenState();
 }
 
-class _SearchPageState extends State<SearchPage> {
+class _SearchPoisonsScreenState extends State<SearchPoisonsScreen> {
   final TextEditingController _searchController = TextEditingController();
 
   @override

@@ -11,6 +11,7 @@ class SearchAppBar extends StatefulWidget {
   final VoidCallback onClearPressed;
   final VoidCallback? onHelpPressed;
   final TextEditingController? controller;
+  final bool autofocus;
 
   const SearchAppBar({
     super.key,
@@ -19,6 +20,7 @@ class SearchAppBar extends StatefulWidget {
     required this.onClearPressed,
     this.onHelpPressed,
     this.controller,
+    this.autofocus = true,
   });
 
   @override
@@ -42,10 +44,8 @@ class _SearchAppBarState extends State<SearchAppBar> {
       child: Container(
         color: AppColors.background,
         padding: const EdgeInsets.only(
-          left: AppDimensions.medium,
           right: AppDimensions.medium,
           top: AppDimensions.medium,
-          bottom: AppDimensions.small,
         ),
         child: _buildContent(),
       ),
@@ -56,7 +56,6 @@ class _SearchAppBarState extends State<SearchAppBar> {
     return Row(
       children: [
         _buildBackButton(),
-        const SizedBox(width: AppDimensions.small),
         Expanded(child: _buildSearchBar()),
         if (widget.onHelpPressed != null) ...[
           const SizedBox(width: AppDimensions.small),
@@ -107,7 +106,7 @@ class _SearchAppBarState extends State<SearchAppBar> {
       child: TextField(
         controller: _controller,
         focusNode: _focusNode,
-        autofocus: true,
+        autofocus: widget.autofocus,
         style: AppTextStyles.mediumBody,
         decoration: _buildSearchFieldDecoration(),
         onChanged: widget.onTextChanged,
@@ -150,7 +149,7 @@ class _SearchAppBarState extends State<SearchAppBar> {
         height: AppDimensions.searchBarHeight,
         decoration: BoxDecoration(
           color: AppColors.accent,
-        borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(12),
         ),
         child: Center(
           child: SvgPicture.asset(

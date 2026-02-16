@@ -135,4 +135,41 @@ enum ScreenLayout {
         return false;
     }
   }
+
+  double getAllPoisonCardHeight() {
+    const double largePoisonCardHeightNormal = 280;
+    const double largePoisonCardHeightZoomed = 340;
+
+    switch (this) {
+      case ScreenLayout.portrait320:
+      case ScreenLayout.landscape320:
+      case ScreenLayout.portrait375:
+      case ScreenLayout.landscape375:
+        return largePoisonCardHeightNormal;
+      case ScreenLayout.portrait320Zoomed:
+      case ScreenLayout.landscape320Zoomed:
+      case ScreenLayout.portrait375Zoomed:
+      case ScreenLayout.landscape375Zoomed:
+        return largePoisonCardHeightZoomed;
+    }
+  }
+
+  double getAllPoisonCardImageHeight() {
+    const double largePoisonCardImageHeightNormal = 180;
+    const double largePoisonCardImageHeightZoomed = 220;
+
+    switch (this) {
+      case ScreenLayout.portrait320:
+      case ScreenLayout.landscape320:
+      case ScreenLayout.portrait375:
+      case ScreenLayout.landscape375:
+        return largePoisonCardImageHeightNormal;
+      case ScreenLayout.portrait320Zoomed:
+      case ScreenLayout.landscape320Zoomed:
+      case ScreenLayout.portrait375Zoomed:
+      case ScreenLayout.landscape375Zoomed:
+        return largePoisonCardImageHeightZoomed;
+    }
+  }
+
 }
