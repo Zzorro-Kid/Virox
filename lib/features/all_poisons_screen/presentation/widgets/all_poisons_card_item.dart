@@ -29,30 +29,42 @@ class AllPoisonsCardItem extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: screenLayout.getAllPoisonCardHeight(),
-        margin: const EdgeInsets.symmetric(
-          horizontal: AppDimensions.medium,
-          vertical: AppDimensions.small,
-        ),
-        decoration: BoxDecoration(
-          color: AppColors.background,
-          borderRadius: BorderRadius.circular(8),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.2),
-              blurRadius: 4,
-              offset: const Offset(0, 2),
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _buildImage(),
-            const SizedBox(height: 12),
-            _buildBadgeAndTitle(),
-          ],
-        ),
+        margin: _buildCardMargin(),
+        decoration: _buildCardDecoration(),
+        child: _buildCardContent(),
       ),
+    );
+  }
+
+  EdgeInsets _buildCardMargin() {
+    return const EdgeInsets.symmetric(
+      horizontal: AppDimensions.medium,
+      vertical: AppDimensions.small,
+    );
+  }
+
+  BoxDecoration _buildCardDecoration() {
+    return BoxDecoration(
+      color: AppColors.background,
+      borderRadius: BorderRadius.circular(8),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.black.withOpacity(0.2),
+          blurRadius: 4,
+          offset: const Offset(0, 2),
+        ),
+      ],
+    );
+  }
+
+  Column _buildCardContent() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _buildImage(),
+        const SizedBox(height: 12),
+        _buildBadgeAndTitle(),
+      ],
     );
   }
 
